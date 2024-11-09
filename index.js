@@ -103,6 +103,7 @@ app.get('/loyalty-points', (req, res) => {
   let purchaseAmount = parseFloat(req.query.purchaseAmount);
   res.send(loyaltyPoints(purchaseAmount));
 });
+// Path = /loyalty-points?purchaseAmount=3600
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
